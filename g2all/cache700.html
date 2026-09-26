@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html manifest="700.manifest">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حسين علي 07810567861 • PS4 Cache</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#060b14;color:#fff}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;overflow:hidden;
+background:
+radial-gradient(circle at 50% 15%,rgba(0,210,255,.12),transparent 30%),
+radial-gradient(circle at 50% 85%,rgba(255,98,0,.10),transparent 30%),
+linear-gradient(145deg,#04070d,#09111f 55%,#050910)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;
+background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+background-size:38px 38px}
+.wrap{width:min(92vw,760px);text-align:center;position:relative;z-index:1}
+.logo{width:150px;height:150px;object-fit:contain;margin:0 auto 18px;filter:drop-shadow(0 0 18px rgba(0,220,255,.28))}
+.line{width:180px;height:3px;margin:0 auto 22px;border-radius:9px;background:linear-gradient(90deg,#ff6a00,#00d9ff,#ff6a00);box-shadow:0 0 14px rgba(0,217,255,.35)}
+.brand{font-size:13px;letter-spacing:4px;color:#8ea3b8;margin-bottom:18px}
+.card{position:relative;padding:34px 28px 30px;border:1px solid rgba(0,217,255,.25);border-radius:20px;
+background:rgba(8,17,30,.82);box-shadow:0 20px 60px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.04);backdrop-filter:blur(8px)}
+h1{margin:0;font-size:clamp(22px,4vw,34px);letter-spacing:1px}
+.sub{margin:10px 0 24px;color:#9aaabd;font-size:14px}
+.status{display:flex;align-items:center;justify-content:center;gap:9px;font-size:14px;color:#dce7f1}
+.dot{width:9px;height:9px;border-radius:50%;background:#ff6a00;box-shadow:0 0 12px #ff6a00;animation:pulse 1.2s infinite}
+.bar{height:7px;width:min(100%,520px);margin:22px auto 0;border-radius:99px;overflow:hidden;background:#121d2b;border:1px solid rgba(255,255,255,.06)}
+.bar span{display:block;height:100%;width:38%;border-radius:99px;background:linear-gradient(90deg,#ff6a00,#00d9ff);box-shadow:0 0 12px rgba(0,217,255,.55);animation:load 2s ease-in-out infinite}
+#msgs{margin:20px 0 0;font-size:20px!important;line-height:1.4;color:#fff!important;font-weight:700}
+.phone{margin-top:18px;color:#ff9b62;font-weight:700;letter-spacing:1px}
+.footer{margin-top:18px;color:#64778c;font-size:11px;letter-spacing:1.5px}
+@keyframes load{0%{transform:translateX(-105%)}55%,100%{transform:translateX(290%)}}
+@keyframes pulse{0%,100%{opacity:.45;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+@media(max-width:520px){.logo{width:120px;height:120px}.card{padding:28px 18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img class="logo" src="img.jpg">
+<div class="line"></div>
+<div class="brand">حسين علي 07810567861 • PS4 GOLDHEN</div>
+<div class="card">
+<h1>Installation du cache</h1>
+<div class="sub">Préparation du cache hors ligne • ne pas fermer le navigateur</div>
+<div class="status"><span class="dot"></span><span>Installation en cours</span></div>
+<div class="bar"><span></span></div>
+<h1 id="msgs">Starting Cache Installation...</h1>
+<div class="phone">+213 560 60 25 85</div>
+</div>
+<div class="footer">PS4 GAMING HOST • حسين علي 07810567861</div>
+</div>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="Cache Installed Successfully ✔";setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
+</script>
+</body>
+</html>

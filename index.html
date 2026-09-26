@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حسين علي 07810567861</title>
+<style>
+:root {
+  --bg: #03070d;
+  --panel: rgba(7, 16, 28, .97);
+  --panel-2: rgba(10, 24, 40, .92);
+  --orange: #ff6a00;
+  --orange-2: #ff8a00;
+  --cyan: #b9f7f2;
+  --text: #f7f9fb;
+  --muted: #9aabbd;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at 50% 8%, rgba(255,106,0,.10), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(185,247,242,.055), transparent 35%),
+    var(--bg);
+  color: var(--text);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 28px 18px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .12;
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 680px;
+  height: 680px;
+  border: 1px solid rgba(255,106,0,.10);
+  border-radius: 50%;
+  box-shadow: 0 0 0 34px rgba(255,106,0,.025), 0 0 0 68px rgba(185,247,242,.018);
+  pointer-events: none;
+}
+
+/* Status text used by the existing script: kept in the DOM and only restyled. */
+#msgs {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  margin: 0;
+  width: min(92vw, 760px);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .20em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: .9;
+  pointer-events: none;
+}
+
+#menu {
+  width: min(92vw, 560px);
+  padding: 30px 34px 34px;
+  background:
+    linear-gradient(180deg, rgba(12,27,44,.98), rgba(4,12,21,.98));
+  border: 1px solid rgba(255,106,0,.42);
+  border-radius: 24px;
+  box-shadow:
+    0 28px 90px rgba(0,0,0,.62),
+    inset 0 1px 0 rgba(255,255,255,.07),
+    0 0 42px rgba(255,106,0,.07);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 11%;
+  right: 11%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--orange), var(--cyan), var(--orange), transparent);
+  border-radius: 100%;
+}
+
+#menu::after {
+  content: "PS4 • EXPLOIT HOST";
+  display: block;
+  margin-top: 20px;
+  color: rgba(185,247,242,.62);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .24em;
+}
+
+.logo {
+  display: block;
+  width: min(205px, 50vw);
+  height: auto;
+  margin: 2px auto 14px;
+  border-radius: 50%;
+  filter: drop-shadow(0 12px 24px rgba(0,0,0,.55));
+}
+
+.brand-phone {
+  margin: 0 auto 25px;
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid rgba(185,247,242,.16);
+  border-radius: 999px;
+  background: rgba(185,247,242,.045);
+  color: var(--cyan);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .10em;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.fw-title {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.fw-title::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 2px;
+  margin: 10px auto 17px;
+  background: var(--orange);
+  border-radius: 4px;
+}
+
+.btn {
+  appearance: none;
+  width: 100%;
+  min-height: 68px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  border: 1px solid rgba(255,106,0,.68);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255,106,0,.22), rgba(5,16,28,.98));
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07), 0 10px 28px rgba(0,0,0,.30);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--orange-2);
+  box-shadow: 0 0 0 1px rgba(255,106,0,.16), 0 14px 34px rgba(255,106,0,.14);
+}
+
+.btn:active { transform: translateY(0); }
+
+.btn-multi {
+  min-height: 72px;
+  font-size: 20px;
+  background: linear-gradient(135deg, rgba(255,106,0,.30), rgba(7,19,33,.98));
+}
+
+.btn-multi::before {
+  content: "◈";
+  margin-right: 12px;
+  color: var(--cyan);
+}
+
+hr, br { display: none; }
+#crypto { display: none !important; }
+
+@media (max-width: 600px) {
+  body { padding: 22px 12px; }
+
+  #menu {
+    width: min(94vw, 480px);
+    padding: 25px 20px 28px;
+    border-radius: 20px;
+  }
+
+  #msgs { top: 10px; font-size: 9px; letter-spacing: .15em; }
+
+  .logo { width: min(180px, 52vw); margin-bottom: 11px; }
+
+  .brand-phone {
+    margin-bottom: 21px;
+    font-size: 13px;
+  }
+
+  .btn { min-height: 62px; font-size: 16px; }
+  .btn-multi { min-height: 66px; font-size: 18px; }
+}
+</style>
+</head>
+<body>
+<script>
+var histlength=history.length;history.go(-histlength 2);
+</script>
+
+<h1 id="msgs"></h1>
+
+<div id="menu">
+  <img class="logo" src="img.jpg" alt="">
+  <div class="brand-phone">07810567861</div>
+  <h2 class="fw-title">PS4 • Firmware</h2>
+
+  <button class="btn btn-multi"
+    onmouseover="msgs.innerHTML='PS4 GoldHEN Host — Multi Firmware'"
+    onmouseout="msgs.innerHTML='حسين علي'"
+    onclick="location.replace('g2all/index.html')">
+    GoldHEN Multi FAW
+  </button>
+</div>
+
+<div id="crypto"></div>
+
+<script>
+function donations(){
+document.getElementById("crypto").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("crypto").style.display = "none";
+}
+</script>
+</body>
+</html>

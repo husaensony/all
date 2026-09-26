@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr" manifest="900.manifest">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حسين علي 07810567861 — PS4 GoldHEN Cache</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+:root {
+    --bg:#02060b;
+    --orange:#ff6a00;
+    --orange2:#ff9b24;
+    --cyan:#b9f3ee;
+    --white:#f7fafc;
+    --muted:#9aa9b9;
+}
+
+* { box-sizing:border-box; }
+
+html,body {
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+body {
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(255,106,0,.18), transparent 36%),
+        radial-gradient(circle at 8% 92%, rgba(185,243,238,.07), transparent 30%),
+        linear-gradient(145deg,#02050a,#081624 55%,#02060b);
+    color:var(--white);
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body::before {
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.14;
+    background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:36px 36px;
+}
+
+body::after {
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    border:1px solid rgba(255,106,0,.10);
+    box-shadow:
+        0 0 0 30px rgba(255,106,0,.025),
+        0 0 0 60px rgba(185,243,238,.015);
+    pointer-events:none;
+}
+
+body > h1:not(#msgs),
+body > hr,
+body > br {
+    display:none;
+}
+
+.brand {
+    position:fixed;
+    z-index:3;
+    top:5vh;
+    left:50%;
+    transform:translateX(-50%);
+    width:min(90vw,760px);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.logo {
+    width:min(220px,48vw);
+    height:auto;
+    display:block;
+    filter:drop-shadow(0 14px 25px rgba(0,0,0,.62));
+}
+
+.brand-line {
+    width:min(390px,70vw);
+    height:2px;
+    margin-top:4px;
+    background:linear-gradient(90deg,transparent,var(--orange),var(--cyan),var(--orange),transparent);
+}
+
+.phone {
+    margin-top:9px;
+    color:var(--cyan);
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.18em;
+}
+
+.cache-card {
+    position:fixed;
+    z-index:4;
+    left:50%;
+    top:57%;
+    transform:translate(-50%,-50%);
+    width:min(88vw,650px);
+    padding:27px 30px 30px;
+    border:1px solid rgba(255,106,0,.43);
+    border-radius:22px;
+    background:linear-gradient(150deg,rgba(10,25,41,.98),rgba(3,9,16,.98));
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.58),
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 0 35px rgba(255,106,0,.06);
+}
+
+.cache-title {
+    text-align:center;
+    margin:0 0 18px;
+    color:var(--orange2);
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.25em;
+    text-transform:uppercase;
+}
+
+#msgs {
+    position:relative;
+    width:100%;
+    min-height:46px;
+    margin:0 !important;
+    padding:0 !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:var(--white) !important;
+    font-size:clamp(16px,2.7vw,22px) !important;
+    line-height:1.35;
+    font-weight:800;
+}
+
+.progress-wrap {
+    width:100%;
+    height:12px;
+    margin-top:22px;
+    overflow:hidden;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.12);
+    background:#02070d;
+    box-shadow:inset 0 2px 6px rgba(0,0,0,.7);
+}
+
+.progress-bar {
+    width:42%;
+    height:100%;
+    border-radius:999px;
+    background:linear-gradient(90deg,var(--orange),var(--orange2),var(--cyan));
+    box-shadow:0 0 16px rgba(255,106,0,.48);
+    animation:cacheLoading 1.35s ease-in-out infinite;
+}
+
+@keyframes cacheLoading {
+    0% { transform:translateX(-120%); opacity:.55; }
+    50% { opacity:1; }
+    100% { transform:translateX(340%); opacity:.55; }
+}
+
+.status {
+    margin-top:13px;
+    text-align:center;
+    color:var(--muted);
+    font-size:10px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+}
+
+body > h1:last-child {
+    position:fixed;
+    z-index:2;
+    bottom:1.5vh;
+    left:50%;
+    transform:translateX(-50%);
+    margin:0 !important;
+    color:rgba(154,169,185,.55);
+    font-size:9px !important;
+    white-space:nowrap;
+}
+
+body > h1:last-child a {
+    color:rgba(154,169,185,.55) !important;
+}
+
+@media(max-width:600px) {
+    .brand { top:4vh; }
+    .logo { width:min(190px,52vw); }
+    .phone { font-size:11px; letter-spacing:.12em; }
+
+    .cache-card {
+        top:59%;
+        width:90vw;
+        padding:23px 18px 25px;
+        border-radius:18px;
+    }
+
+    .cache-title { font-size:10px; }
+    .progress-wrap { height:10px; }
+}
+</style>
+</head>
+<body>
+
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="Cache Installed Successfully ✔";setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
+</script>
+
+<div class="brand">
+    <img class="logo" src="img.jpg" alt="حسين علي 07810567861">
+    <div class="brand-line"></div>
+    <div class="phone">+213 560 60 25 85</div>
+</div>
+
+<div class="cache-card">
+    <div class="cache-title">PS4 • Offline Cache</div>
+    <h1 id="msgs">Starting Cache Installation...</h1>
+    <div class="progress-wrap">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="status">Installation en cours • Ne pas fermer le navigateur</div>
+</div>
+
+<h1>PS4 [5.05] 7.00 - 13.52 FW GoldHEN Host by GamerHack</h1>
+<hr>
+<br>
+<h1 style="margin-top:43px;">Special Thanks to:<a href="https://twitter.com/_AlAzif" style="color:#f31414;margin-left:10px;margin-right:10px;">@_AlAzif</a>ChendoChap<a href="https://x.com/Kameleonre_" style="color:#f31414;margin-left:10px;margin-right:10px;">@Kameleonre_</a>SiSTR0 Abc</h1>
+</body>
+</html>
